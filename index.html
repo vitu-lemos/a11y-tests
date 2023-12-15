@@ -1,4 +1,4 @@
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -9,34 +9,27 @@
 
 <body>
     <div class="heading">O intuito desta página é testar leitores de tela</div>
-    <div>
+    <div class="list">
+        <p>Para fazer login em um formulário você precisa dos seguintes passos</p>
+        <li>Abrir a página</li>
+        <li>Localizar o formulário</li>
+        <li>Preencher os campos</li>
+        <li>Efetuar a açao do formulario</li>
+        <li>Aguardar o resultado</li>
 
-        <div class="item">
-            <div class="subheading"> Lista de requisitos</div>
-            <div class="list">
-                <li>Instalar o leitor de tela</li>
+    </div>
+    <form action="">
+        <div>
+            <span>Digite sem nome</span>
+            <input type="text">
+        </div>
+        <div>
+            <span>Digite sua senha</span>
+            <input type="text">
+        </div>
+        <div class="button-login" onclick="login()">Login</div>
 
-                <li>Baixar o projeto</li>
-
-                <li>Interagir com a pagina</li>
-            </div>
-        </div>
-        <div class="item">
-            <div class="subheading">Botoes</div>
-            <div class="button" onclick="test()">Eu sou um botão</div>
-            <button class="button" onclick="test()"><img src="./icon-lupa.png"></button>
-        </div>
-        <div class="item">
-            <div class="subheading">Forms</div>
-            <form class="form">
-                <input type="text" placeholder="Digite aqui seu nome">
-                <input type="text" placeholder="Digite aqui sua senha">
-                <div class="button-login" onclick="test()">Login</div>
-            </form>
-        </div>
-    </div>
-    </div>
-    </div>
+    </form>
     <script src="script.js"></script>
 </body>
 
